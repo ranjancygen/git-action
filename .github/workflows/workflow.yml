@@ -8,13 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    statergy: 
+        matrix: 
+          node-version: [16.x]
     steps:
        - uses: actions/checkout@v1
-         with:
-            node-version: 16
        - run: npm install
        - run: npm run build
-    - uses: git-action@master
+    - uses: ranjancygen/git-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
