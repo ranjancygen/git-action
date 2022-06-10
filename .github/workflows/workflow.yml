@@ -14,6 +14,7 @@ jobs:
         node-version: [15.x]
     
     steps:
+      - run: actions/checkout
       - uses: actions/checkout@v1
       - run: npm install
       - run: npm run build
