@@ -11,7 +11,7 @@ const HomePage = () => {
         <Link to="/about">About</Link>
       </nav>
       <nav>
-        <Link to="/todo">Get Todo User</Link>
+        <Link to="/todo">Get ALL USERS</Link>
       </nav>
     </>
 
